@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="whole">
+    <div id="wrapper">
+        <div class="header">
+            <h1>The Kanto Region</h1> <a href="/home" class="return">Back to Home Page</a>
+            <div id="map">
+            </div>
+        </div>
+        <div class="content">
+            <h3>The First Pokémon Region...</h3>
+            <img src="{% static 'images/mapofk.jpg' %}">
+                <div class="para">
+                    <p>The Kanto region from the Red and Blue series of the game is actually based on the real 
+                    life Kanto region of Japan, made from the Greater Tokyo Area, with the map in the Pokémon games being
+                    nearly geographically similar, with the western portion of the map actually derived from the 
+                    eastern  Chūbu area of Japan.
+                    </p>
+                    <p>Pallet Town is based off Pokémon series creator Satoshi Tajiri hometown, Pewter City inspired by the famous Iwajuku site and Maebashi.
+                    Saffron City is based on the Marunouchi Area of Tokyo, with the Magnet train station in the games being based off the Tokyo Station bullet train that travels between Tokyo and Osaka. 
+                    in the image you can see how the game version overlays to the Greater Tokyo Area. In Red and Blue Version you are essentially exploring the most populous region of Japan.
+                    </p>
+                </div>
+                <img src="{% static 'images/kanto.jpeg' %}">
+                <div class="graph">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio accusamus deleniti omnis eius, eligendi obcaecati iusto, commodi tempora eveniet saepe delectus deserunt asperiores dolorum. 
+                        Modi maiores magni illum excepturi repellendus ex necessitatibus vero quasi in consequatur optio officia laboriosam nobis voluptates dolores, omnis est. Nemo itaque voluptate natus officiis 
+                        unde voluptatem labore, omnis blanditiis veniam totam recusandae voluptatibus corporis illo vel nulla quas a aliquam asperiores ullam veritatis laboriosam fugit? Delectus quibusdam mollitia 
+                        reiciendis velit illo voluptates, quasi beatae minima.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat dolorum vitae illum quidem eos, temporibus quo, nesciunt, molestiae praesentium facere possimus obcaecati sint. 
+                            Voluptatibus possimus distinctio dolorem temporibus architecto magni quaerat aut, nisi explicabo provident vel, dolor, porro et!</p>
+                </div>
+                </div>
+                
+        </div>
+    </div>
+    <script>
+        console.log('screen')
+        function initMap() {
+            console.log('test')
+            var location = {lat: 35.689487, lng: 139.691711};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLkLEAWOr8gmOclvOCQG3bK8t2DlDmJak&callback=initMap" ></script>
+</body>
+</html>

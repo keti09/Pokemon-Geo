@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johto</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="whole">
+    <div id="wrapper">
+        <div class="header">
+            <h1>The Johto Region</h1> <a href="/home" class="return">Back to Home Page</a>
+            <div id="map">
+            </div>
+        </div>
+        <div class="content">
+            <h3>The Historic Region...</h3>
+            <img src="{% static 'images/johto.jpeg' %}">
+                <div class="para">
+                    <p>The second region to be intorduced in the core Pokémon games, Johto is based from the Kansai Region of Japan which includes historic areas such as Osaka and Kyoto, also the region where Nintendo HQ is located at. Like in real life
+                    Johto/Kansai is located west of the Kanto Region. Some big landmarks that inspire locations in this series were Meiji no Mori Minō Quasi-National Park, and the Expo Commemoration Park, which inspired the National Park area of the game. Just like how the Kansai has rich 
+                    soil you can farm berries in the game something you weren't able to do in the previous games because of the volcanic soil that covered the Kanto region. 
+                    </p>
+                    <p>The Johto region is my favorite for it's rich history and lore with the Bell Tower and the Brass Tower being based off of Kinkaku-ji and Ginkaku-ji two temples in Kyto that have a silver and gold bird perched atop of them
+                    representing Lugia and Ho-oh respectively. Ercuteak City itself serving as a copy of Kyoto with its tradtional architecture and culture. The Ilex Forest in the games drew inspiration from Kumano Kodō, a series of ancient pilgrimage routes through a large and dense forest with the paths leading to a shrine. Which in the games housed the legendary Pokémon Celebi.
+                    </p>
+                </div>
+            <img src="{% static 'images/ercuteak.png' %}">
+                    <div class="graph">
+                        <p>Johto Was the next region developed due to being the second largest region of Japan but also because of its rivalry with the Kanto region. Gold and Silver were intended to
+                            be the last pokemon games which is why developers went all out with content for this game. Another Legend is with the Burned Tower, which used to house the Legendary Pokemon Lugia but burned down due to a fire from a 
+                            lightning storm which was then put out by the rain, 3 Pokémon died in the fire which were then revived by another Legendary Pokémon Ho-oh, resulting in the birth of Entei, Suicune, and Raikou.
+                        </p>
+                        <p>Kinkaku-ji is covered in gold foil while its accompanying temple Ginkaku-ji was supposed to be covered in silver foil that never came
+                            to fruition unfortunately.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, pariatur. Distinctio accusantium quaerat tempore nobis quia consectetur eum magni totam ducimus consequatur repellat, aut voluptate laudantium eius. Delectus dignissimos iste perspiciatis omnis voluptatum, molestiae impedit cupiditate modi, ex commodi provident corporis aut itaque eum quas cum officia nulla error molestias.</p>
+                    </div>
+            <img src="{% static 'images/kinkaku.jpg' %}">
+                    <div class="graph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas recusandae fuga error sapiente ex, tempora fugit consequuntur enim! Reiciendis voluptate impedit deleniti aperiam dolor dolorum veritatis, debitis repellat? Eius placeat blanditiis soluta totam distinctio eum pariatur unde? Ab atque sunt totam magni in numquam exercitationem porro eveniet minima praesentium!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae corporis sint. Sunt voluptatem vitae doloribus labore deleniti id culpa praesentium. Sequi velit, placeat consectetur eum error nostrum praesentium ipsam!</p>
+                    </div>
+            <img src="{% static 'images/ginkakuji.jpg' %}">
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit a dicta id, cumque placeat doloremque recusandae! Et beatae in nihil corporis harum odit magni numquam illum porro repellendus obcaecati eum vitae commodi maxime facilis, provident ipsum, ut veniam, assumenda sequi? Ea molestiae quasi, id quaerat aperiam vero facere! Ipsum, obcaecati debitis, eos nam sed iusto recusandae, beatae hic labore dolorum unde! Enim veniam itaque atque dolores facere odio qui tenetur alias vitae, quae hic dolorem perferendis quasi voluptate sed beatae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem ea, dolorem voluptas ipsam eius id quia a nostrum blanditiis. Commodi dolores nostrum mollitia iusto culpa dolorem! Ratione autem aut animi non repudiandae porro unde excepturi iure a exercitationem, consectetur, voluptatibus impedit quaerat odio rem sit vero ex minima reprehenderit labore maxime. Nemo nostrum recusandae assumenda quod repellendus eum provident tenetur, enim voluptatum ipsam sint, ut id excepturi! Impedit cum eum nemo perspiciatis sit magnam rem accusantium consequuntur ducimus aspernatur?</p>
+                    </div>
+        </div>
+    
+    </div>
+    <script>
+        console.log('screen')
+        function initMap() {
+            console.log('test')
+            var location = {lat: 35.011635, lng: 135.768036};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLkLEAWOr8gmOclvOCQG3bK8t2DlDmJak&callback=initMap" ></script>
+</body>
+</html>

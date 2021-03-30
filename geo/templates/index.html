@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeGeo</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="title">
+            <img src="{% static 'images/logo.png' %}">
+            <h2>Discover the real world locations that inspired the Pokémon regions!</h2>
+        </div>
+        <div class="intro">
+            <p>Have you ever wondered what inspired the locations of the Pokémon games? Well look no further than
+                Pokémon Geo! Here we have all the trivia and lore that inspired eac region from the Pokémon games, I'm sure 
+                some will surpise you, click on the links below to start your journey.
+            </p>
+            <h3>The Pokémon Regions</h3>
+                    <h4><a href="/kanto">Kanto</a></h4>
+                    <p>The first Pokémon region from the Red & Blue Versions of the game.</p>
+                    <br>
+                    <h4><a href="/johto">Johto</a></h4>
+                    <p>The second Pokémon region from the Gold & Silver Versions of the game. </p>
+                    <br>
+                    <h4><a href="/unova">Unova</a></h4>
+                    <p>The fifth Pokémon region from the Black & White Versions of the game.</p>
+        </div>
+    </div>
+</body>
+</html>

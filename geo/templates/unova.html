@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unova</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="whole">
+    <div id="wrapper">
+        <div class="header">
+            <h1>The Unova Region</h1> <a href="/home" class="return">Back to Home Page</a>
+            <div id="map">
+            </div>
+        </div>
+        <div class="content">
+            <h3>The American Region...</h3>
+            <img src="{% static 'images/manhattan.jpg' %}">
+            <div class="para">
+                <p>Unova is unique in that unlike the its predessecors it is based on New York City and the Eastern Board of New Jersey. Inspired by Junichi Masuda's trip to New York for the 
+                release of the previous Pokémon games Diamond and Pearl, Masuda was enamored by the many different cultural boroughs of New York, that it seemed like it was it's own small world. The giant buildings and bridges of New York
+                also captured Masuda's attention with Unova being connected by 4 different bridges with the Brooklyn Bridge serving as inspiration for the Skyarrow Bridge in the game.
+                </p>
+                <p>Castelia City serves as an homage to Lower Manhattan with the vast skyscrapers and many communities that a player has to exlpore as well as many NPC's wondering around. The in game model is almost and identical copy to the layout of Manhattan. Even the Pokémon designed for this game 
+                    were created with New York in mind, with the Pokémon Watchog having the lines on his chest look similar to the safety vest of construction workers. Pidove can also be found just about anywhere in Unova due to New York's high
+                    pigeon population.
+                </p>
+        </div>
+        <img src="{% static 'images/castelia.png' %}">
+        <div class="graph">
+            <p>Unova even has a subway system inspired from New York's pwn system but trainers can battle here. The last photo shows a comparison from a bird's eye view of the two regions, it's fascinating to see how they created a whole new world just from one segment of New York.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellat esse pariatur iure rem tempora laudantium alias 
+                porro ab nihil, assumenda quas eos eveniet dicta amet ipsum accusamus odit qui. Veritatis laudantium alias corporis repellat facilis rerum quaerat. Est eveniet, esse veniam corrupti mollitia inventore? Dolor iure molestiae eum sequi?</p>
+        </div>
+        <img src="{% static 'images/Unova.png' %}">
+        <div class="graph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae odio, fugit consequatur mollitia ratione error quos doloremque neque dicta illum velit illo, explicabo, temporibus dolorum! Optio velit cupiditate nobis ratione atque ipsum deserunt distinctio necessitatibus laboriosam placeat eos voluptas, harum fuga saepe doloremque ipsam animi ab delectus? 
+                Ipsam reprehenderit minus nostrum voluptatem numquam corrupti dignissimos dolor totam, perferendis assumenda quae veniam harum pariatur explicabo a eum, provident dolore quisquam debitis ducimus iure ratione consequatur temporibus! Aperiam rem officiis qui suscipit. Mollitia amet quam provident necessitatibus reprehenderit possimus ipsam assumenda nisi nam! 
+                Voluptatem eveniet similique minus nam magnam praesentium a alias?</p>
+        </div>
+    </div>
+    <script>
+        console.log('screen')
+        function initMap() {
+            console.log('test')
+            var location = {lat: 40.783058, lng: -73.971252};
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHlhlIztPjlWA2aai0dAav53iPCGy8yvc&callback=initMap" ></script>
+</body>
+
+</html>
